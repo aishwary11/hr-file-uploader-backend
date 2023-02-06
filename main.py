@@ -7,7 +7,9 @@ app = Flask(__name__)
 def main():
     if request.method == "POST":
         f = request.files["file"]
+        d = request.files["description"]
         f.save(f.filename)
+        d.save(d)
 
 
 if __name__ == "main":
