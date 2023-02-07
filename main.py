@@ -13,4 +13,4 @@ def main():
 
 
 if __name__ == "main":
-    app.run(debug=True)
+    app.run(port=5000, debug=True)
